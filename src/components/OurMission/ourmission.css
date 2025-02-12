@@ -1,0 +1,134 @@
+.container {
+  width: 1140px;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #f69220;
+  border-radius: 10px;
+  /* background-color: red; */
+}
+
+.imageSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outmissiontxt {
+  font-size: 40px;
+  color: #f69220;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ourmissionpara {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+.leftquot {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.rightquot {
+  position: absolute;
+  bottom: -45px;
+  right: 0px;
+}
+.contentSide {
+  width: 50%;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  /* background-color: #f69220; */
+}
+
+.ourMissionSvg {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1025px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .imageSide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .ourMissionSvg {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .contentSide {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .outmissiontxt {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .ourmissionpara {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .leftquot {
+    top: -20px;
+    left: 10px;
+    width: 30px;
+    height: auto;
+  }
+
+  .rightquot {
+    bottom: -20px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .outmissiontxt {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .ourmissionpara {
+    font-size: 0.9rem;
+    padding: 0 8px;
+  }
+
+  .leftquot,
+  .rightquot {
+    width: 25px;
+    height: auto;
+  }
+}

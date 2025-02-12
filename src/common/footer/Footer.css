@@ -1,0 +1,133 @@
+.Footer_main_upper {
+  border-top: 2px solid;
+  /* background: var(--color-darkgreen); */
+  background: #fefcf3;
+  color: var(--color-white);
+  /* background-color: #f1f0e8; */
+  /* box-shadow: 0px -10px 60px 12px rgba(246, 146, 32, 0.2); */
+}
+.footer_link_color {
+  /* color: var(--color-white); */
+  color: #000;
+}
+.Footer_main {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.socialicon_footer_main {
+  display: flex;
+  gap: 1rem;
+}
+.links_sec_footer,
+.links_sec_footer_inner {
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: column; */
+}
+
+.input_contact {
+  height: 35px;
+  border: 1px solid #f69220;
+  border-radius: 5px;
+  padding: 0 5px;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.input_contact:focus {
+  outline: none;
+  border: 1px solid #f69220;
+}
+
+.social_sec_footer,
+.contact_sec_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.address_sec_main_footer,
+.socialfooter_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #f69220;
+}
+
+.contact_sec_footer_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact_sec_footer_inner h3 {
+  color: #f69220;
+}
+.contact_sec_footer_inner h4 {
+  color: black;
+  font-weight: 500;
+}
+.socialicon_footer {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid;
+  /* padding: 7px 7px 6px 9px; */
+  /* padding: 0.4rem; */
+  padding: 5px 5px 5px 7px;
+  border-radius: 50%;
+  /* background: var(--color-darkolivegreen-shade); */
+  background: #f69220;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialicon_footer:hover .socialicon_footer_inner {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+}
+.socialicon_footer_twitter:hover {
+  color: #1da1f2;
+}
+.socialicon_footer_linkdin:hover {
+  color: #0e76a8;
+}
+.socialicon_footer_whatsapp:hover {
+  color: #25d366;
+}
+.socialicon_footer:hover {
+  background-color: #fff;
+}
+
+.inputText {
+  width: 325px;
+}
+
+.fs20 {
+  font-size: 22px;
+}
+/* .1DA1F2 */
+
+@media screen and (max-width: 650px) {
+  .Footer_main {
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+  .fieldname {
+    font-size: 18px;
+  }
+  .inputText {
+    width: 100%;
+  }
+  .links_sec_footer {
+    align-self: flex-start;
+  }
+}

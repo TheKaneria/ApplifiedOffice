@@ -1,0 +1,23 @@
+.main_div_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.heading {
+  color: #f69220;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .innnerheading {
+    font-size: 20px;
+  }
+}

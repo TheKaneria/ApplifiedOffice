@@ -1,0 +1,138 @@
+.shadow_nav {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.shadow_nav.visible {
+  transform: translateY(0); /* Slide down when visible */
+}
+
+.Navbar_main {
+  /* height: 122px; */
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 1.5rem;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+.tagline {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f69220;
+  text-align: center;
+}
+
+.navbar-hidden {
+  display: none;
+}
+
+.navbar-shown {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.links_nav_main {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo_nav_main {
+  /* height: 100px; */
+  width: 200px;
+}
+.logo_nav {
+  object-fit: contain;
+  height: 110px;
+  width: 100%;
+}
+
+/*  */
+
+.side_icon {
+  display: none;
+  width: 45px;
+  height: 30px;
+  /* border: none; */
+  color: var(--color-brown);
+  cursor: pointer;
+  transition: all 5s ease-in;
+}
+.sidebar_base_wrapp {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar_main_wrapp {
+    margin-top: 2.7rem;
+    width: 100%;
+    padding: 3% 0 0 0;
+    /* margin-top: 1%; */
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+  }
+  .logo_nav {
+    object-fit: contain;
+    height: 90px;
+    width: 100%;
+  }
+
+  .sidebar_base_wrapp {
+    display: block;
+    padding: 4%;
+    border: 1px solid var(--color-black);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    background-color: var(--color-white);
+    border-top: 2px solid;
+    transition: all 0.5s ease-in;
+    height: 100vh;
+  }
+  .links_nav_main {
+    display: none;
+  }
+
+  .side_icon {
+    display: block;
+    /* margin-right: 15px; */
+  }
+
+  .tagline {
+    font-size: 18px !important;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
+
+.links_nav_main_wrapp {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar_main {
+    /* height: 122px; */
+    justify-content: center;
+  }
+  .taglinediv {
+    /* display: none !important; */
+  }
+}
